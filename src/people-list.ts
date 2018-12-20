@@ -31,9 +31,7 @@ export class PeopleList {
             for (const header of headers) {
                 const columnHeader = document.createElement("th");
                 columnHeader.setAttribute("scope", "col");
-                const headerText = document.createElement("normal-text");
-                headerText.setAttribute("value", header || "");
-                columnHeader.appendChild(headerText);
+                columnHeader.innerText = header;                
                 headerTemplate.content.appendChild(columnHeader);
             }
             const bindingEngine: BindingEngine = Container.instance.get(BindingEngine);
