@@ -1,8 +1,13 @@
+import { library, dom } from "@fortawesome/fontawesome-svg-core";
+import { faEdit, faTrashAlt } from "@fortawesome/free-regular-svg-icons";
 import { Aurelia, PLATFORM } from "aurelia-framework";
 import { VirtualRepeat } from "aurelia-ui-virtualization";
 import "whatwg-fetch";
 import "../styles/app.scss";
 import { App } from "./app";
+
+library.add(faEdit, faTrashAlt);
+dom.watch();
 
 export async function configure(aurelia: Aurelia) {
     aurelia.use
