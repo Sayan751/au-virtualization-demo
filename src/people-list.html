@@ -1,0 +1,18 @@
+<template>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>FName</th>
+                <th>LName</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr virtual-repeat.for="person of people" infinite-scroll-next.call="nextChunkLoader($scrollContext)">
+                <td>${$index}</td>
+                <td>${person.fname}</td>
+                <td>${person.lname}</td>
+            </tr>
+        </tbody>
+    </table>
+</template>

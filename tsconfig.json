@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "removeComments": true,
+        "sourceMap": true,
+        "target": "es5",
+        "lib": [
+            "es2017",
+            "dom",
+            "es2018.promise",
+            "esnext"
+        ],
+        "resolveJsonModule": true,
+        "esModuleInterop": true,
+        "declaration": false,
+        "typeRoots": [
+            "./node_modules/@types"
+        ]
+    }
+}

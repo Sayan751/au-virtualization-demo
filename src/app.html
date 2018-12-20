@@ -1,0 +1,8 @@
+<template>
+    <require from="./people-list"></require>
+    <div class="page-host">
+        <div class="d-flex justify-content-around">
+            <people-list people.bind="people" next-chunk-loader.bind="push30"></people-list>
+        </div>
+    </div>
+</template>
